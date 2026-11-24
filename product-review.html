@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#4B0082">
-  <meta name="description" content="Share a jazz review and your listening preferences with JazzScratch.">
+  <meta name="description" content="Share a jazz review, rating, likes, dislikes, and product tags with JazzScratch.">
   <title>Reviews & listening notes — JazzScratch</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="products.js"></script>
@@ -25,34 +25,64 @@
           <div class="form-field"><label for="review-album">Album</label><input class="field" id="review-album" name="album" required placeholder="Album title"></div>
           <div class="form-field"><label for="review-artist">Artist</label><input class="field" id="review-artist" name="artist" required placeholder="Artist name"></div>
         </div>
-        <div class="form-field"><span class="filter-label">Your rating</span><div class="rating-row"><label for="review-rating">Stars</label><select class="select" id="review-rating" name="rating" required><option value="5">5 — Loved it</option><option value="4">4 — Really liked it</option><option value="3">3 — It was good</option><option value="2">2 — Not for me</option><option value="1">1 — Didn't enjoy it</option></select></div></div>
-        <div class="form-field"><span class="filter-label">Sounds you enjoy <small>(choose any)</small></span><div class="choice-grid">
-          <label class="choice"><input type="checkbox" name="genre" value="Bebop"><span>Bebop</span></label>
-          <label class="choice"><input type="checkbox" name="genre" value="Cool jazz"><span>Cool jazz</span></label>
-          <label class="choice"><input type="checkbox" name="genre" value="Modal"><span>Modal</span></label>
-          <label class="choice"><input type="checkbox" name="genre" value="Vocal jazz"><span>Vocal jazz</span></label>
-          <label class="choice"><input type="checkbox" name="genre" value="Bossa nova"><span>Bossa nova</span></label>
-          <label class="choice"><input type="checkbox" name="genre" value="Fusion"><span>Fusion</span></label>
-        </div></div>
-        <div class="form-field"><span class="filter-label">Your listening mood</span><div class="choice-grid">
-          <label class="choice"><input type="checkbox" name="mood" value="Relaxed"><span>Relaxed</span></label>
-          <label class="choice"><input type="checkbox" name="mood" value="Focused"><span>Focused</span></label>
-          <label class="choice"><input type="checkbox" name="mood" value="Upbeat"><span>Upbeat</span></label>
-          <label class="choice"><input type="checkbox" name="mood" value="Late night"><span>Late night</span></label>
-          <label class="choice"><input type="checkbox" name="mood" value="Adventurous"><span>Adventurous</span></label>
-        </div></div>
-        <div class="form-field"><span class="filter-label">How you like to listen</span><div class="choice-grid">
-          <label class="choice"><input type="checkbox" name="format" value="Vinyl"><span>Vinyl</span></label>
-          <label class="choice"><input type="checkbox" name="format" value="CD"><span>CD</span></label>
-          <label class="choice"><input type="checkbox" name="format" value="Digital"><span>Digital</span></label>
-          <label class="choice"><input type="checkbox" name="format" value="Live"><span>Live</span></label>
-        </div></div>
-        <div class="form-field"><label for="review-text">Your review</label><textarea class="textarea" id="review-text" name="review" required maxlength="1200" placeholder="What stood out? What would you listen to next?"></textarea></div>
+        <fieldset class="form-field star-rating-field">
+          <legend class="filter-label">Your rating</legend>
+          <div class="star-rating" role="radiogroup" aria-label="Rating from 1 to 10 stars">
+            <input type="radio" id="rating-1" name="rating" value="1"><label for="rating-1" title="1 star">★</label>
+            <input type="radio" id="rating-2" name="rating" value="2"><label for="rating-2" title="2 stars">★</label>
+            <input type="radio" id="rating-3" name="rating" value="3"><label for="rating-3" title="3 stars">★</label>
+            <input type="radio" id="rating-4" name="rating" value="4"><label for="rating-4" title="4 stars">★</label>
+            <input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5" title="5 stars">★</label>
+            <input type="radio" id="rating-6" name="rating" value="6"><label for="rating-6" title="6 stars">★</label>
+            <input type="radio" id="rating-7" name="rating" value="7"><label for="rating-7" title="7 stars">★</label>
+            <input type="radio" id="rating-8" name="rating" value="8"><label for="rating-8" title="8 stars">★</label>
+            <input type="radio" id="rating-9" name="rating" value="9"><label for="rating-9" title="9 stars">★</label>
+            <input type="radio" id="rating-10" name="rating" value="10" required><label for="rating-10" title="10 stars">★</label>
+          </div>
+        </fieldset>
+        <section class="review-section" aria-labelledby="liked-heading">
+          <div class="form-field">
+            <h2 id="liked-heading">What did you like?</h2>
+            <label for="review-liked">Details you enjoyed</label>
+            <textarea class="textarea" id="review-liked" name="liked" maxlength="1200" placeholder="Describe the performances, sound, packaging, or other details you enjoyed."></textarea>
+          </div>
+          <div class="form-field">
+            <span class="filter-label">Liked keywords or product tags <small>(choose any)</small></span>
+            <div class="choice-grid">
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Bebop"><span>Bebop</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Cool jazz"><span>Cool jazz</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Modal"><span>Modal</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Vocal jazz"><span>Vocal jazz</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Bossa nova"><span>Bossa nova</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Fusion"><span>Fusion</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Vinyl"><span>Vinyl</span></label>
+              <label class="choice"><input type="checkbox" name="liked-tag" value="Great sound"><span>Great sound</span></label>
+            </div>
+          </div>
+        </section>
+        <section class="review-section review-section-disliked" aria-labelledby="disliked-heading">
+          <div class="form-field">
+            <h2 id="disliked-heading">What did you dislike?</h2>
+            <label for="review-disliked">Details that missed the mark</label>
+            <textarea class="textarea" id="review-disliked" name="disliked" maxlength="1200" placeholder="Describe what you would improve or what did not work for you."></textarea>
+          </div>
+          <div class="form-field">
+            <span class="filter-label">Disliked keywords or product tags <small>(choose any)</small></span>
+            <div class="choice-grid">
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Poor sound"><span>Poor sound</span></label>
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Too repetitive"><span>Too repetitive</span></label>
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Slow tempo"><span>Slow tempo</span></label>
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Harsh mastering"><span>Harsh mastering</span></label>
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Not my style"><span>Not my style</span></label>
+              <label class="choice choice-disliked"><input type="checkbox" name="disliked-tag" value="Limited selection"><span>Limited selection</span></label>
+            </div>
+          </div>
+        </section>
         <div><button class="button" type="submit">Save listening note</button><p class="notice" data-review-message hidden role="status"></p></div>
       </form>
     </section>
     <section class="review-shell section-tight"><div class="section-heading"><div><p class="eyebrow">From the listening room</p><h2>Your notes</h2></div></div><div class="review-list" data-review-list></div></section>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><div><a class="footer-brand" href="index.html">JazzScratch</a><p class="footer-copy">A good record, a comfortable chair, and nowhere else to be.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="products.html">Shop all music</a><a href="product-review.html">Write a review</a><a href="profile.html">Your profile</a><a href="cart.html">Your bag</a></nav></div><div class="shell footer-bottom">© 2025 JazzScratch · Made for music lovers</div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><div><a class="footer-brand" href="index.html">JazzScratch</a><p class="footer-copy">A good record, a comfortable chair, and nowhere else to be.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="products.html">Shop all music</a><a href="product-review.html">Write a review</a><a href="profile.html">Your profile</a><a href="cart.html">Your bag</a></nav></div><div class="shell footer-bottom"><div class="footer-bottom-inner"><span>© 2025 JazzScratch · Made for music lovers</span><nav class="social-links" aria-label="Social media"><a href="#">JazzScratch Blog</a><a href="#">YouTube</a><a href="#">Instagram</a><a href="#">TikTok</a></nav></div></div></footer>
 </body>
 </html>
