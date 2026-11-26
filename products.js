@@ -11,7 +11,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1957',
     label: 'Blue Note',
     badge: 'Staff pick',
-    image: 'https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?auto=format&fit=crop&w=900&q=85',
     description: 'A landmark hard bop session with a sound as bold and warm as the blue hour. Pressed on heavyweight vinyl for slow evenings and attentive listening.'
   },
   {
@@ -26,7 +26,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1959',
     label: 'Columbia Records',
     badge: 'Bestseller',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=85',
     description: 'A timeless invitation into modal jazz. This carefully selected pressing brings every unhurried note and late-night detail into focus.'
   },
   {
@@ -41,7 +41,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1959',
     label: 'Columbia Records',
     badge: '',
-    image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=85',
     description: 'Playful rhythms, bright piano, and a cool West Coast feel. A beautifully remastered CD for your everyday listening rotation.'
   },
   {
@@ -71,7 +71,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1964',
     label: 'Verve Records',
     badge: '',
-    image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85',
     description: 'The gentle meeting of cool jazz and bossa nova. A clear, detailed remaster that feels like an open window on a summer night.'
   },
   {
@@ -86,7 +86,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1961',
     label: 'Riverside Records',
     badge: 'Live recording',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1524650359799-842906ca1c06?auto=format&fit=crop&w=900&q=85',
     description: 'A close-up seat at an extraordinary live set. The interplay is subtle, spontaneous, and endlessly rewarding on vinyl.'
   },
   {
@@ -101,7 +101,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: '1956',
     label: 'Prestige Records',
     badge: 'Instant download',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=900&q=85',
     description: 'Sonny Rollins at full, inventive stride. A high-quality digital edition, ready to download and take wherever you go.'
   },
   {
@@ -116,7 +116,7 @@ window.JAZZSCRATCH_PRODUCTS = [
     year: 'Curated collection',
     label: 'JazzScratch',
     badge: 'Curated',
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=85',
+    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=85',
     description: 'A hand-picked set of essential Blue Note-era sounds, made for discovering your next favorite and building a richer listening habit.'
   }
 ];
